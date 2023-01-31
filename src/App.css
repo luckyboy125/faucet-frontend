@@ -1,0 +1,690 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/** @format */
+
+.container {
+  padding: 0 32px !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.main {
+  padding: 0 64px !important;
+  margin: auto !important;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1366px !important;
+  min-width: 550px !important;
+}
+
+.header {
+  text-align: center;
+  margin-top: 20px !important;
+  margin-bottom: 26px !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+@media (min-width: 1200px) {
+  .selectPart {
+    max-width: 730px !important;
+    width: 100% !important;
+    margin: auto !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .viewPart {
+    max-width: 554px !important;
+    width: 100% !important;
+    margin: auto !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .descriptionPart {
+    max-width: 1120px !important;
+    margin: auto !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    max-width: 970px !important;
+    width: 100% !important;
+    padding: 0 16px !important;
+    margin: auto !important;
+  }
+}
+
+@media (max-width: 996px) {
+  .main {
+    max-width: 750px !important;
+    width: 100% !important;
+    padding: 0 16px !important;
+    margin: auto !important;
+  }
+}
+.headerTitle {
+  font-size: 36px !important;
+  font-weight: 500 !important;
+  font-family: inherit !important;
+  line-height: 1.1 !important;
+  color: inherit !important;
+}
+
+.selectPart {
+  width: 100%;
+  margin-bottom: 5px !important;
+}
+.alert {
+  width: 100% !important;
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
+}
+.viewPart {
+  background-color: #ffffff !important;
+  border: 1px solid #f5f5f5 !important;
+  align-items: center !important;
+}
+
+.view {
+  background-color: #ffffff !important;
+  text-align: center !important;
+  display: table-row !important;
+  border-bottom: 1px solid #f5f5f5;
+  max-height: 300px !important;
+  overflow: auto !important;
+}
+
+.iconsPart {
+  width: 100% !important;
+  padding: 10px 15px !important;
+  border-top: 1px solid #ddd !important;
+  background-color: #f5f5f5 !important;
+  border-bottom-right-radius: 3px !important;
+  border-bottom-left-radius: 3px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: baseline !important;
+}
+
+.iconsFunded {
+  text-align: center !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  color: #333 !important;
+  display: flex !important;
+  flex-grow: 2 !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-flow: row wrap !important;
+}
+
+.iconsCoins {
+  text-align: center !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  color: #333 !important;
+  display: flex !important;
+  flex-grow: 4 !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-flow: row wrap !important;
+}
+
+.iconsBlocks {
+  text-align: center !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  display: flex !important;
+  color: #333 !important;
+  flex-grow: 2 !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-flow: row wrap !important;
+}
+
+.iconsPeers {
+  text-align: center !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  display: flex !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  color: #333 !important;
+  flex-grow: 1 !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-flow: row wrap !important;
+}
+
+.descriptionTitle {
+  font-size: 24px !important;
+  font-weight: 500 !important;
+}
+
+.descriptionPart {
+  margin-top: 20px !important;
+}
+
+.descriptionMain {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.descriptionSecond {
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+}
+
+.descriptionLetter {
+  margin-left: 88px !important;
+  margin-bottom: 10px !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  color: #333 !important;
+}
+
+.descriptionFirst {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  color: #333 !important;
+}
+.avatarPart {
+  float: left !important;
+  margin-top: 5px !important;
+  margin-left: 5px !important;
+}
+.avatar {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 4px !important;
+  margin: auto !important;
+  margin-top: 3px !important;
+}
+.addressPart {
+  padding: 5px !important;
+  margin: 0 !important;
+  display: table-cell !important;
+}
+.address {
+  padding: 9.5px !important;
+  font-size: 13px !important;
+  line-height: 1.42857143 !important;
+  color: #333 !important;
+  word-wrap: break-word !important;
+  background-color: #f5f5f5 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace !important;
+}
+
+.status {
+  padding-bottom: 3px !important;
+  padding-right: 5px !important;
+  width: 100% !important;
+  display: table-cell !important;
+}
+.statusBar {
+  height: 4px !important;
+  margin: 0 !important;
+  background-color: green !important;
+}
+.rounded {
+  color: #fff !important;
+  background-color: #53af50 !important;
+}
+/** @format */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.coinSelectPart {
+  width: 100%;
+}
+
+.coinSelectInput {
+  font-size: 14px !important ;
+  padding: 6px 12px !important;
+  height: 34px !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  color: #555 !important;
+  background-color: #fff !important;
+  background-image: none !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%) !important;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%) !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.coinSelectInput:focus {
+  border-color: #66afe9 !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%),
+    0 0 8px rgb(102 175 233 / 60%) !important;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%) !important;
+}
+
+.coinSelectButton {
+  cursor: pointer !important;
+  display: inline-block !important;
+  padding: 6px 12px !important;
+  margin-bottom: 0 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.42857143 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  vertical-align: middle !important;
+  -ms-touch-action: manipulation !important;
+  touch-action: manipulation !important;
+  cursor: pointer !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  background-image: none !important;
+  border: 1px solid transparent !important;
+  border-radius: 4px !important;
+  color: #333 !important;
+  background-color: #fff !important;
+  border-color: #ccc !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.coinSelectButton:hover {
+  color: #333 !important;
+  background-color: #e6e6e6 !important;
+  border: 1px solid #adadad !important;
+}
+
+.selectDropdownMenu {
+  float: left !important;
+  min-width: 172px !important;
+  padding: 5px 0 !important;
+  margin: 2px 0 0 !important;
+  font-size: 14px !important;
+  text-align: left !important;
+  list-style: none !important;
+  background-color: #fff !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+  border: 1px solid #ccc !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  border-radius: 4px !important;
+}
+.btn-check:focus + .btn-outline-secondary,
+.btn-outline-secondary:focus {
+  box-shadow: none !important;
+  /* box-shadow: 0 0 0 0.25rem rgb(108 117 125 / 50%); */
+}
+.coinSelectButton:focus {
+  color: #333 !important;
+  background-color: #e6e6e6 !important;
+  /* border-color: #8c8c8c !important; */
+  border: 1px solid #8c8c8c !important;
+  text-decoration: none !important;
+}
+.btn-check:checked + .btn-outline-secondary:focus,
+.btn-check:active + .btn-outline-secondary:focus,
+.btn-outline-secondary:active:focus,
+.btn-outline-secondary.active:focus,
+.btn-outline-secondary.dropdown-toggle.show:focus {
+  box-shadow: none !important;
+}
+/* 
+.fa {
+  float: left !important;
+}
+.fas {
+  float: left !important;
+} */
+.iconLetterFont {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  color: #333 !important;
+  font-weight: 400 !important;
+  margin-left: 2px !important;
+}
+
+.descriptionIcon {
+  width: auto !important;
+  font-size: 36px !important;
+  margin-left: 40px !important;
+  float: left !important;
+  overflow: hidden !important;
+  clear: left !important;
+  text-align: right !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.titleIcon {
+  font-size: 36px !important;
+}
+/** @format */
+
+.container {
+  padding: 0 32px !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.main {
+  padding: 0 64px !important;
+  margin: auto !important;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1366px !important;
+  min-width: 550px !important;
+}
+
+.header {
+  text-align: center;
+  margin-top: 20px !important;
+  margin-bottom: 26px !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+@media (min-width: 1200px) {
+  .selectPart {
+    max-width: 730px !important;
+    width: 100% !important;
+    margin: auto !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .viewPart {
+    max-width: 554px !important;
+    width: 100% !important;
+    margin: auto !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .descriptionPart {
+    max-width: 1120px !important;
+    margin: auto !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    max-width: 970px !important;
+    width: 100% !important;
+    padding: 0 16px !important;
+    margin: auto !important;
+  }
+}
+
+@media (max-width: 996px) {
+  .main {
+    max-width: 750px !important;
+    width: 100% !important;
+    padding: 0 16px !important;
+    margin: auto !important;
+  }
+}
+.headerTitle {
+  font-size: 36px !important;
+  font-weight: 500 !important;
+  font-family: inherit !important;
+  line-height: 1.1 !important;
+  color: inherit !important;
+}
+
+.selectPart {
+  width: 100%;
+  margin-bottom: 5px !important;
+}
+.alert {
+  width: 100% !important;
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
+}
+.viewPart {
+  background-color: #ffffff !important;
+  border: 1px solid #f5f5f5 !important;
+  align-items: center !important;
+}
+.reaptcha{
+  padding-top: 50px;
+  text-align: -webkit-center !important;
+}
+
+.view {
+  background-color: #ffffff !important;
+  text-align: center !important;
+  display: table-row !important;
+  border-bottom: 1px solid #f5f5f5;
+  max-height: 300px !important;
+  overflow: auto !important;
+}
+
+.iconsPart {
+  width: 100% !important;
+  padding: 10px 15px !important;
+  border-top: 1px solid #ddd !important;
+  background-color: #f5f5f5 !important;
+  border-bottom-right-radius: 3px !important;
+  border-bottom-left-radius: 3px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: baseline !important;
+}
+
+.iconsFunded {
+  text-align: center !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  color: #333 !important;
+  display: flex !important;
+  flex-grow: 2 !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-flow: row wrap !important;
+}
+
+.iconsCoins {
+  text-align: center !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  color: #333 !important;
+  display: flex !important;
+  flex-grow: 4 !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-flow: row wrap !important;
+}
+
+.iconsBlocks {
+  text-align: center !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  display: flex !important;
+  color: #333 !important;
+  flex-grow: 2 !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-flow: row wrap !important;
+}
+
+.iconsPeers {
+  text-align: center !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  display: flex !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  color: #333 !important;
+  flex-grow: 1 !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-flow: row wrap !important;
+}
+
+.descriptionTitle {
+  font-size: 24px !important;
+  font-weight: 500 !important;
+}
+
+.descriptionPart {
+  margin-top: 20px !important;
+}
+
+.descriptionMain {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.descriptionSecond {
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+}
+
+.descriptionLetter {
+  margin-left: 88px !important;
+  margin-bottom: 10px !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  color: #333 !important;
+}
+
+.descriptionFirst {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  color: #333 !important;
+}
+.avatarPart {
+  float: left !important;
+  margin-top: 5px !important;
+  margin-left: 5px !important;
+}
+.avatar {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 4px !important;
+  margin: auto !important;
+  margin-top: 3px !important;
+}
+.addressPart {
+  padding: 5px !important;
+  margin: 0 !important;
+  display: table-cell !important;
+}
+.address {
+  padding: 9.5px !important;
+  font-size: 13px !important;
+  line-height: 1.42857143 !important;
+  color: #333 !important;
+  word-wrap: break-word !important;
+  background-color: #f5f5f5 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace !important;
+}
+
+.status {
+  padding-bottom: 3px !important;
+  padding-right: 5px !important;
+  width: 100% !important;
+  display: table-cell !important;
+}
+.statusBar {
+  height: 4px !important;
+  margin: 0 !important;
+  background-color: green !important;
+}
+.rounded {
+  color: #fff !important;
+  background-color: #53af50 !important;
+}
